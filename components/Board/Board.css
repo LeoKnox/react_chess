@@ -1,8 +1,9 @@
-.board {};
+.board {
+}
 
 .tiles {
-    display: grid;
-    grid-template-columns: 3em;
-    grid-template-rows: 3em;
-    width: 24em;
+  display: grid;
+  grid-template-columns: repeat(8,3em);
+  grid-template-rows: repeat(8,3em);
+  width: 24em;
 }
