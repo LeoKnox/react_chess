@@ -1,4 +1,5 @@
 import { getCharacter } from "../../helper.js";
+import "./Board.js";
 
 export default Board = () => {
   const ranks = Array(8)
@@ -11,7 +12,7 @@ export default Board = () => {
     <div>
       {ranks.map((rank, i) =>
         files.map((file, j) => (
-          <div>
+          <div className="board">
             {rank}
             {file}
           </div>
