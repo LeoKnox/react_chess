@@ -1,0 +1,8 @@
+.board {};
+
+.tiles {
+    display: grid;
+    grid-template-columns: 3em;
+    grid-template-rows: 3em;
+    width: 24em;
+}
