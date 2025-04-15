@@ -1,11 +1,12 @@
-body, html {
-  margin:0;
-  padding:0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   display: grid;
   place-content: center;
   height: 100vh;
-  background-color: tan;
+  background: tan;
 }
