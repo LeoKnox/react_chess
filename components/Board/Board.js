@@ -10,14 +10,16 @@ export default Board = () => {
     .map((x, i) => getCharacter(i));
   return (
     <div className="board">
+        <div className="tiles">
       {ranks.map((rank, i) =>
         files.map((file, j) => (
-          <div className="tiles">
+          <div>
             {rank}
             {file}
           </div>
         ))
       )}
+      </div>
     </div>
   );
 };
