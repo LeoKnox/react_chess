@@ -3,7 +3,7 @@
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(8,3em);
-  grid-template-rows: repeat(8,3em);
+  grid-template-columns: repeat(8, 10px);
+  grid-template-rows: repeat(8, 10px);
   width: 24em;
 }
