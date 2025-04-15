@@ -12,6 +12,7 @@ export default Board = () => {
     console.log("get class name");
     let c = "tile";
     c += (i + j) % 2 === 0 ? " tile-brown" : " tile-beige";
+    return c;
   };
   return (
     <div className="board">
