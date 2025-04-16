@@ -1,19 +1,36 @@
-.board {
-  display: grid;
-  grid-template-columns: 2em 1fr;
-}
+import { getCharacter } from "../../helper.js";
+import "./Board.css";
+import Files from "./bits/Files";
+import Ranks from "./bits/Ranks";
 
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(8, 4em);
-  grid-template-rows: repeat(8, 4em);
-  width: 32em;
-}
-
-.tile-brown {
-  background-color: brown;
-}
-
-.tile-sandybrown {
-  background: sandybrown;
-}
+export default Board = () => {
+  const ranks = Array(8)
+    .fill()
+    .map((x, i) => 8 - i);
+  const files = Array(8)
+    .fill()
+    .map((x, i) => i);
+  const getClassName = (i, j) => {
+    console.log("get class name");
+    let c = "tile";
+    c += (i + j) % 2 === 0 ? " tile-brown" : " tile-sandybrown";
+    return c;
+  };
+  return (
+    <div className="board">
+      <Ranks ranks={ranks} />
+      <div className="tiles">
+        {ranks.map((rank, i) =>
+          files.map((file, j) => (
+            <div key={file+"-"+rank} className={getClassName(9 - i, j)}>
+              {rank}
+              {file}
+            </div>
+          ))
+        )}
+      </div>
+      <Files files={files} />
+      {ranks}
+    </div>
+  );
+};
