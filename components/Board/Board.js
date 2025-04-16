@@ -2,6 +2,7 @@ import { getCharacter } from "../../helper.js";
 import "./Board.css";
 import Files from "./bits/Files";
 import Ranks from "./bits/Ranks";
+import white_pawn from "../assets/pawn.js";
 
 export default Board = () => {
   const ranks = Array(8)
@@ -22,7 +23,7 @@ export default Board = () => {
       <div className="tiles">
         {ranks.map((rank, i) =>
           files.map((file, j) => (
-            <div className={getClassName(i, j)}>
+            <div key={file + "-" + rank} className={getClassName(9 - i, j)}>
               {rank}
               {file}
             </div>
@@ -30,7 +31,7 @@ export default Board = () => {
         )}
       </div>
       <Files files={files} />
-      {ranks}
+      {white_pawn}
     </div>
   );
 };
