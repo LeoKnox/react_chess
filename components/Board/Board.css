@@ -1,6 +1,6 @@
 .board {
   display: grid;
-  grid-template-columns: 1em, 1em;
+  grid-template-columns: 2em 1fr;
 }
 
 .tiles {
