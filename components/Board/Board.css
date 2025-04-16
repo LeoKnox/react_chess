@@ -1,13 +1,19 @@
 .board {
+  display: grid;
+  grid-template-columns: 1em, 1em;
 }
 
 .tiles {
   display: grid;
-  grid-template-columns: repeat(8, 2em);
-  grid-template-rows: repeat(8, 2em);
-  width: 16em;
+  grid-template-columns: repeat(8, 4em);
+  grid-template-rows: repeat(8, 4em);
+  width: 32em;
 }
 
 .tile-brown {
   background-color: brown;
+}
+
+.tile-sandybrown {
+  background: sandybrown;
 }
