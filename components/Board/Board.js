@@ -11,7 +11,7 @@ export default Board = () => {
   const getClassName = (i, j) => {
     console.log("get class name");
     let c = "tile";
-    c = (i + j) % 2 === 0 ? "tile-brown" : "tile-beige";
+    c += (i + j) % 2 === 0 ? " tile-brown" : "tile-beige";
     return c;
   };
   return (
