@@ -7,3 +7,7 @@
   grid-template-rows: repeat(8, 2em);
   width: 16em;
 }
+
+.tile-brown {
+  background-color: brown;
+}
