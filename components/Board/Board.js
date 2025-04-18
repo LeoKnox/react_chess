@@ -2,7 +2,7 @@ import { getCharacter } from "../../helper.js";
 import "./Board.css";
 import Files from "./bits/Files";
 import Ranks from "./bits/Ranks";
-import {white_pawn} from "../assets/pawn.js";
+import { white_pawn } from "../assets/pawn.js";
 
 export default Board = () => {
   const ranks = Array(8)
@@ -31,7 +31,7 @@ export default Board = () => {
         )}
       </div>
       <Files files={files} />
-      {white_pawn}
+      <div>{white_pawn()}</div>
     </div>
   );
 };
