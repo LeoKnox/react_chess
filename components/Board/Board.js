@@ -31,7 +31,7 @@ export default Board = () => {
           ))
         )}
       </div>
-      <Pieces />
+      {Pieces}
       <Files files={files} />
     </div>
   );
