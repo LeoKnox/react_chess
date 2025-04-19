@@ -2,6 +2,7 @@ import { getCharacter } from "../../helper.js";
 import "./Board.css";
 import Files from "./bits/Files";
 import Ranks from "./bits/Ranks";
+import Pieces from "./pieces/Pieces";
 import { white_pawn } from "../assets/pawn.js";
 
 export default Board = () => {
@@ -30,8 +31,8 @@ export default Board = () => {
           ))
         )}
       </div>
+      <Pieces />
       <Files files={files} />
-      <div>{white_pawn()}</div>
     </div>
   );
 };
