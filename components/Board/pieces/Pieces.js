@@ -7,7 +7,7 @@ export default Pieces = () => {
   position[0][0] = "wr";
   console.log(position);
   return (
-    <div>
+    <div className="pieces">
       {position.map((r, rank) =>
         r.map((f, file) => (position[rank][file] ? position[rank][file] : null))
       )}
