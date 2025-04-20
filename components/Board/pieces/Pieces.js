@@ -9,7 +9,7 @@ export default Pieces = () => {
   return (
     <div className="pieces">
       {position.map((r, rank) =>
-        r.map((f, file) => (position[rank][file] ? position[rank][file] : null))
+        r.map((f, file) => (position[rank][file] ? <Piece key={rank+":"+file} rank={rank} file={file} piece={position[rank][file]} /> : null))
       )}
     </div>
   );
