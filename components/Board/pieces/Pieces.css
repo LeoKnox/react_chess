@@ -6,3 +6,9 @@
   bottom: 3em;
   background-color: rgba(200, 0, 0, 0.5);
 }
+
+.piece {
+    width: 12.5%;
+    height: 12.5%;
+    position: absolute;
+}
