@@ -8,7 +8,8 @@
 }
 
 .piece {
-    width: 12.5%;
-    height: 12.5%;
-    position: absolute;
+  width: 12.5%;
+  height: 12.5%;
+  position: absolute;
+  font-size: 2em;
 }
