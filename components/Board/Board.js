@@ -4,6 +4,7 @@ import Files from "./bits/Files";
 import Ranks from "./bits/Ranks";
 import Pieces from "./pieces/Pieces";
 import { white_pawn } from "../assets/pawn.js";
+import wr from "../assets/wr.svg";
 
 export default Board = () => {
   const ranks = Array(8)
@@ -20,6 +21,7 @@ export default Board = () => {
   };
   return (
     <div className="board">
+    {wr}
       <Ranks ranks={ranks} />
       <div className="tiles">
         {ranks.map((rank, i) =>
@@ -31,7 +33,7 @@ export default Board = () => {
           ))
         )}
       </div>
-      {Pieces}
+      <Pieces />
       <Files files={files} />
     </div>
   );
