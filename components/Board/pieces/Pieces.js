@@ -1,5 +1,5 @@
 import "./Pieces.css";
-import { Piece } from "./Piece.js";
+import Piece from "./Piece.js";
 
 const Pieces = () => {
   const position = Array(8)
