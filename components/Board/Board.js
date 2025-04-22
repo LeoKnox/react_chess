@@ -21,7 +21,7 @@ export default Board = () => {
   };
   return (
     <div className="board">
-    {wr}
+      <div className="svgTest">jjjjjj</div>
       <Ranks ranks={ranks} />
       <div className="tiles">
         {ranks.map((rank, i) =>
