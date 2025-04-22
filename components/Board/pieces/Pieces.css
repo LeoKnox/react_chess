@@ -13,3 +13,10 @@
   position: absolute;
   font-size: 2em;
 }
+
+.svgTest {
+  background-image: url {
+    ../../assets/wr.svg;
+  }
+  color: green;
+}
